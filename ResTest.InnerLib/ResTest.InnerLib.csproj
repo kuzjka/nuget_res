@@ -3,15 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.17</Version>
+    <Version>1.0.18</Version>
     <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
   
   <ItemGroup>
-    <Content Include="res/">
+    <Content Include="res/**">
       <Pack>True</Pack>
       <PackagePath>buildTransitive/res/</PackagePath>
       <PackageCopyToOutput>False</PackageCopyToOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ResTest.InnerLib.targets">
       <Pack>True</Pack>
