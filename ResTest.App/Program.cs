@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ResTest.App
 {
@@ -6,7 +7,8 @@ namespace ResTest.App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Outer: " + File.ReadAllText("res/outer.txt")); 
+            Console.WriteLine("Inner: " + File.ReadAllText("res/inner.txt")); 
         }
     }
 }
